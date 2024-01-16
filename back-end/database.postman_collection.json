@@ -1,0 +1,442 @@
+{
+	"info": {
+		"_postman_id": "db9b9300-570f-4d42-9b2e-9cffa360d9ea",
+		"name": "database",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30862798"
+	},
+	"item": [
+		{
+			"name": "alimente",
+			"item": [
+				{
+					"name": "list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_path}}/{{version}}/{{alimente_path}}",
+							"host": [
+								"{{base_path}}"
+							],
+							"path": [
+								"{{version}}",
+								"{{alimente_path}}"
+							],
+							"query": [
+								{
+									"key": "denumire",
+									"value": "lapte",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "detail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_path}}/{{version}}/{{alimente_path}}/1",
+							"host": [
+								"{{base_path}}"
+							],
+							"path": [
+								"{{version}}",
+								"{{alimente_path}}",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"denumire\": \"branza\",\n    \"dataExpirare\": \"2024-01-14 12:21:49.434 +00:00\",\n    \"categorie\": \"lactate\",\n    \"producator\": \"Hochland\",\n    \"stocDisponibil\": 10,\n    \"cImage\": \"imagine\",\n    \"pret\": 15\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_path}}/{{version}}/{{alimente_path}}/",
+							"host": [
+								"{{base_path}}"
+							],
+							"path": [
+								"{{version}}",
+								"{{alimente_path}}",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 2,\n    \"cImage\": \"https://static.mega-image.ro/medias/sys_master/h52/h4b/9098210672670.jpg\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_path}}/{{version}}/{{alimente_path}}/",
+							"host": [
+								"{{base_path}}"
+							],
+							"path": [
+								"{{version}}",
+								"{{alimente_path}}",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_path}}/{{version}}/{{alimente_path}}/1",
+							"host": [
+								"{{base_path}}"
+							],
+							"path": [
+								"{{version}}",
+								"{{alimente_path}}",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "collections",
+			"item": [
+				{
+					"name": "list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_path}}/{{version}}/{{collections_path}}/",
+							"host": [
+								"{{base_path}}"
+							],
+							"path": [
+								"{{version}}",
+								"{{collections_path}}",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "detail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_path}}/{{version}}/{{collections_path}}/1",
+							"host": [
+								"{{base_path}}"
+							],
+							"path": [
+								"{{version}}",
+								"{{collections_path}}",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"denumire\": \"alimente\",\n    \"personId\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_path}}/{{version}}/{{collections_path}}/",
+							"host": [
+								"{{base_path}}"
+							],
+							"path": [
+								"{{version}}",
+								"{{collections_path}}",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"denumire\": \"lactate\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_path}}/{{version}}/{{collections_path}}/",
+							"host": [
+								"{{base_path}}"
+							],
+							"path": [
+								"{{version}}",
+								"{{collections_path}}",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_path}}/{{version}}/{{collections_path}}/1",
+							"host": [
+								"{{base_path}}"
+							],
+							"path": [
+								"{{version}}",
+								"{{collections_path}}",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "persons",
+			"item": [
+				{
+					"name": "list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_path}}/{{version}}/{{persons_path}}/",
+							"host": [
+								"{{base_path}}"
+							],
+							"path": [
+								"{{version}}",
+								"{{persons_path}}",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "detail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_path}}/{{version}}/{{persons_path}}/1",
+							"host": [
+								"{{base_path}}"
+							],
+							"path": [
+								"{{version}}",
+								"{{persons_path}}",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"prenume\": \"Vasile\",\n    \"nume\": \"Gheorghe\",\n    \"email\": \"vasilegheorghe@gmail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_path}}/{{version}}/{{persons_path}}/",
+							"host": [
+								"{{base_path}}"
+							],
+							"path": [
+								"{{version}}",
+								"{{persons_path}}",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"nume\": \"Marian\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_path}}/{{version}}/{{persons_path}}/",
+							"host": [
+								"{{base_path}}"
+							],
+							"path": [
+								"{{version}}",
+								"{{persons_path}}",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_path}}/{{version}}/{{persons_path}}/2",
+							"host": [
+								"{{base_path}}"
+							],
+							"path": [
+								"{{version}}",
+								"{{persons_path}}",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_path",
+			"value": "http://localhost:8080/api",
+			"type": "string"
+		},
+		{
+			"key": "alimente_path",
+			"value": "alimente",
+			"type": "string"
+		},
+		{
+			"key": "version",
+			"value": "v1",
+			"type": "string"
+		},
+		{
+			"key": "collections_path",
+			"value": "collections"
+		},
+		{
+			"key": "persons_path",
+			"value": "persons"
+		}
+	]
+}

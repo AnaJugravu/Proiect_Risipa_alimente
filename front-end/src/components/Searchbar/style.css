@@ -1,0 +1,35 @@
+.toolbar {
+    margin-top: -125px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.toolbar .custom-button, .toolbar .searchbar {
+    min-height: 20px;
+    height: 100%;
+}
+
+.toolbar .search-button {
+    margin-right: -145px;
+}
+
+.toolbar .custom-text-input {
+    border: 2px solid #ffffff;
+    outline: none;
+}
+
+.toolbar .custom-text-input:hover {
+    border: 2px solid #dff2ff;
+}
+
+.toolbar .add-button {
+    margin-top: 80px;
+}
+
+.toolbar .search-button {
+    background-color: #ffffff;
+    border: 2px solid #dff2ff;
+    color: #16003f;
+    padding: 7px 15px;
+}

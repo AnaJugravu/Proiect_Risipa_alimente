@@ -1,0 +1,40 @@
+
+.modal {
+    top: 0;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    padding: 0;
+    background-color: #16003f52;
+    border: none;
+    display: block;
+}
+
+.modal-content {
+    background-color: #ffffff;
+    margin: 2vw auto;
+    padding: 20px;
+    border-radius: 20px;
+    width: 80vw;
+    max-width: 500px;
+}
+
+.modal-header {
+    display: flex;
+}
+
+.modal-header h2 {
+    flex: 1;
+    margin: 10px 0 0 0;
+}
+
+.modal-close {
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.create-form {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+}

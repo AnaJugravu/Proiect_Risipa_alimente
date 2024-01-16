@@ -1,0 +1,67 @@
+.aliment-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+
+.aliment-info-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.aliment-header {
+    display: flex;
+    gap: 10px;
+}
+
+.aliment-header :first-child {
+    flex: 1;
+}
+
+.alimentTitle {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #dff2ff;
+}
+
+.aliment-specs {
+    display: flex;
+    align-items: center;
+}
+
+.aliment-specs div {
+    width: 50%;
+}
+
+.aliment-dataE {
+    padding: 20px;
+    background-color: #16003f;
+    border-radius: 20px;
+    color: #dff2ff;
+}
+
+.poster-container {
+    max-height: 200px;
+}
+
+.edit-aliment-form {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.aliment-tool-btn {
+    height: 40px;
+}
+
+.remove-btn{
+    border: none;
+}

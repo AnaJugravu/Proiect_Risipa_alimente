@@ -1,0 +1,58 @@
+::-webkit-scrollbar {
+  width: 15px;
+  background-color: #ffffff;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #16003fec; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #16003fec;
+}
+
+* {
+  font-family: 'Arial';
+  letter-spacing: 1px;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background-color: #dff2ff;
+}
+
+.custom-text-input {
+  padding: 5px 10px;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+
+.custom-button {
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-weight: 500;
+  background-color: #16003f;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.remove-btn {
+  max-width: 40px;
+  max-height: 40px;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 18px;
+  background-color: #16003f;
+  cursor: pointer;
+  color: #ffffff;
+}
